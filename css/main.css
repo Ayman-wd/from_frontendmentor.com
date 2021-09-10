@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.container{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+header{
+    position:fixed;
+    width: 75%;
+    display: flex;
+    text-align: center;
+    justify-content:space-between;
+    margin-top: 50px;
+}
+
+.logo{
+    margin-left: 40px;
+}
+
+.header-links ul{
+    display: flex;
+    margin-right: 40px;
+}
+
+.header-links ul li{
+    margin-left: 40px;
+    
+}
+
+.header-links ul li a{
+    color: white;
+    font-family: 'Barlow', sans-serif;
+
+    font-size: 18px;
+}
+.header-links ul .btn-contact{
+    background-color: white;
+    color: black;
+    padding: 16px 20px;
+    border-radius: 30px ;
+    font-family: 'Barlow', sans-serif;
+
+}
+
+.header-links ul .btn-contact:hover{
+    background-color: hsla(0, 0%, 100%, 0.3);
+    transition: .5s;
+    color: white;
+}
+
+
+
+
+/* banner section */
+
+.banner{
+    height: 100vh;
+    background: url(../images/image-header.jpg) no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    align-items: flex-end;
+}
+
+.banner h1{
+    position: absolute;
+    top:26%;
+    left: 31%;
+    font-size: 60px;
+    color:white;
+    text-transform: uppercase; 
+    letter-spacing: 5px;
+    font-family: 'Fraunces', serif;   
+}
+
+.banner img{
+    position: absolute;
+    top:46%;
+    left: 49%;
+}
+
+/* end banner section */
+
+/* services section */
+.services{
+    background-color: rgba(245, 245, 245,.5);
+}
+.services_1 ,.services_2{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.services_1 .text {
+    width: 29%;
+    margin-left: 150px;
+}
+
+.services_1 .text h1 ,.services_2 .text h1{
+    font-size: 40px;
+    padding-bottom: 35px;
+    font-family: 'Fraunces', serif;
+}
+
+.services_1 .text p ,.services_2 .text p{
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 35px;
+    color: rgba(0,0,0,.6);
+    font-family: 'Barlow', sans-serif;
+
+}
+
+.services_1 .text .btn a{
+    text-decoration: underline hsl(51, 100%, 49%);
+    color: black;
+}
+
+.services_2 .text{
+    width: 30%;
+    margin-right: 150px;
+}
+.services_2 .text .btn a{
+    text-decoration: underline hsl(7, 99%, 70%);
+    color: black;
+}
+
+.services_3_4{
+    position: relative;
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.services_3_4 .text3{
+    position: absolute;
+    text-align: center;
+    top:65%;
+    left: 13%;
+    width: 25%;
+}
+
+.services_3_4 .text3 p{
+   line-height: 35px;
+   font-size: 18px;
+   color:hsl(198, 62%, 26%) ;
+   font-family: 'Barlow', sans-serif;
+
+}
+
+.services_3_4 .text3 h1{
+    margin-bottom: 15px;
+    font-family: 'Fraunces', serif;
+}
+
+
+.services_3_4 .text4{
+    position: absolute;
+    text-align: center;
+    top:65%;
+    left: 63%;
+    width: 25%;
+}
+
+.services_3_4 .text4 p{
+   line-height: 35px;
+   font-size: 18px;
+   color:hsl(167, 40%, 24%);
+   font-family: 'Barlow', sans-serif;
+
+}
+
+.services_3_4 .text4 h1{
+    margin-bottom: 15px;
+    font-family: 'Fraunces', serif;
+}
+
+/* end services section */
+
+
+/* client section */
+
+.client{
+    text-align: center;
+    background-color: rgba(245, 245, 245,.5);
+    padding: 150px 0;
+}
+
+.client ul{
+    display: flex;
+}
+
+.client h1{
+    margin-bottom: 80px;
+    font-size: 35px;
+    color: rgba(0,0,0,.4);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    text-transform:uppercase ;
+    letter-spacing: 4px;
+}
+
+.client ul li img{
+    border-radius:100% ;
+    height: 80px;
+    margin-bottom: 50px;
+}
+
+.client ul li p{
+    width: 70%;
+    margin-left: 17%;
+    align-items: center;
+    font-size: 18px;
+    color: rgba(0,0,0,.8);
+    line-height: 35px;
+    margin-bottom: 65px;
+    font-family: 'Barlow', sans-serif;
+
+}
+
+.client ul li h2{
+    color: rgba(0,0,0,1);
+    margin-bottom: 15px;
+    font-family: 'Fraunces', serif;
+
+}
+
+.client small{
+    font-size:12px;
+    font-family: 'Barlow', sans-serif;
+    color: rgba(0,0,0,.4);
+}
+
+/* end client section */
+
+/* footer */
+
+.footer{
+    background: hsl(168, 34%, 41%);
+}
+
+.footer .footer-img ul{
+    display: flex;
+}
+
+.footer .footer-img ul li img{
+    display: inline-block;
+    height: 447px;
+    
+}
+
+.footer .logo {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0 50px 0 ;
+}
+
+.footer .links ul{
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+    margin-bottom: 80px;
+    
+}
+
+.footer .links ul li a{
+    margin-left: 40px;
+    
+    color:hsl(212, 27%, 19%);
+}
+
+
+.footer .social ul {
+    display: flex;
+    justify-content: center; 
+}
+
+.footer .social ul li{
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+#svg-color:hover{
+    color:white;
+}
+
+
+/* end footer */
+
+
+/* midea */
+@media all and (max-width:375px) {
+   .container{
+       width: 375px;
+       margin: 0 auto;
+       
+   }
+    
+    .logo{
+        margin-left: 20px;
+    }
+    
+    .header-links ul{
+        display: none;
+        
+    }
+    
+    /* banner section */
+
+.banner h1{
+    left: 0%;
+    font-size: 40px;
+    text-align: center;
+}
+
+.banner img{
+    left: 43%;
+    height: 180px;
+}
+
+/* end banner section */
+    
+    
+/* services section */
+
+.services_1 ,.services_2{
+   display: block;
+   text-align: center;
+}
+
+.services_1 .img img,.services_2 .img img{
+    width: 375px;
+}
+
+.services_1 .img img{
+    vertical-align: top;
+}
+
+.services_1 .text {
+    width: 90%;
+    margin-left: 15px;
+    padding: 30px;
+}
+
+.services_1 .text h1 ,.services_2 .text h1{
+    font-size: 30px;
+    padding: 30px 0;
+    font-family: 'Fraunces', serif;
+}
+
+
+.services_2 .text{
+    width: 90%;
+    margin-left: 15px;
+}
+
+
+
+ 
+
+/* end services section */
+}
