@@ -253,7 +253,7 @@ header{
 }
 
 .footer .footer-img ul li img{
-    display: inline-block;
+    
     height: 447px;
     
 }
@@ -351,21 +351,108 @@ header{
     padding: 30px;
 }
 
+.services_2 .text{
+    width: 100%;
+    padding: 30px;
+    
+}
+
 .services_1 .text h1 ,.services_2 .text h1{
-    font-size: 30px;
-    padding: 30px 0;
+    font-size: 33px;
     font-family: 'Fraunces', serif;
 }
 
 
-.services_2 .text{
+
+.services_3_4{
+    position: relative;
+    display:block;
+   
+}
+
+.services_3_4 img{
+   width: 100%;
+    height: 575px;
+    vertical-align: top;
+    
+}
+
+.services_3_4 .text3{
+    top:32%;
+    left: 5%;
     width: 90%;
-    margin-left: 15px;
+    font-size: 14px;
+}
+
+.services_3_4 .text3 p{
+   line-height: 30px;
+   font-size: 15px;
+}
+
+.services_3_4 .text3 h1{
+    margin-bottom: 30px;
+    font-family: 'Fraunces', serif;
+}
+
+
+.services_3_4 .text4{
+    top:83%;
+    left: 5%;
+    width: 90%;
+}
+
+.services_3_4 .text4 p{
+   line-height: 30px;
+   font-size: 15px;
 }
 
 
 
- 
-
 /* end services section */
+
+
+
+/* client section */
+
+.client ul{
+    display: block;
+}
+
+.client h1{
+    margin-bottom: 70px;
+    font-size: 20px;
+}
+
+
+.client ul li p{
+    width: 82%;
+    margin-left: 36px;
+    margin-bottom: 35px;
+}
+
+
+.client ul li {
+   margin-bottom: 80px;
+}
+
+/* end client section */
+
+/* footer */
+
+
+.footer .footer-img ul{
+    display: grid;
+    grid-template-columns: 187px 187px;
+    grid-template-rows: 187px 187px;
+}
+
+.footer .footer-img ul li img{
+    width: 187px;
+    height: 100%;
+    
+}
+
+
+
+/* end footer */
 }
