@@ -23,6 +23,10 @@ header{
     margin-top: 50px;
 }
 
+.burger svg{
+    display:none ;
+}
+
 .logo{
     margin-left: 40px;
 }
@@ -304,15 +308,73 @@ header{
        margin: 0 auto;
        
    }
-    
+
+    .burger svg{
+        display:block ;
+        position: absolute;
+        top:5%;
+        left:118%;
+        cursor: pointer;
+    }
+
+   
     .logo{
         margin-left: 20px;
     }
+    header{
+        z-index: 99;
+    }
+
+
+
+
+    .header-links {
+        position: absolute;
+        top:30%;
+        left: 200%;
+    }
     
-    .header-links ul{
-        display: none;
+    .show{
+        left: 5%;
+    }
+    .header-links ul {
+        display:block ; 
+        background-color: white; 
+        width: 345px;
+        height: 335px;
+        margin: 30px 0 0 0;
+        font-family: 'Barlow', sans-serif;
+        position: absolute;
+        top:30%;
+        left: 5%;
+        text-align: center; 
         
     }
+
+    .header-links ul li{
+        text-align: center;
+        justify-content: center;
+        color :hsl(212, 27%, 19%);
+        margin: 50px 0 0 0;
+        
+    }
+
+    .header-links ul li a{
+        color :hsl(212, 27%, 19%);
+    }
+
+    .header-links ul .btn-contact{
+        background-color: hsl(51, 100%, 49%);
+        color :hsl(212, 27%, 19%);  
+    }
+
+    .header-links ul .btn-contact:hover{
+        background-color: hsl(51, 100%, 49%);
+        color :hsl(212, 27%, 19%);  
+    }
+    
+   
+    
     
     /* banner section */
 
