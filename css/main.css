@@ -392,14 +392,17 @@ header{
     
     
 /* services section */
-
-.services_1 {
-    display: table;
-    text-align: center;
+.services_1{
+    flex-direction: column-reverse;
 }
 
 .services_2{
-   display: block;
+    flex-direction: column;
+}
+
+.services_1 ,.services_2{
+    
+
    text-align: center;
 }
 
@@ -409,19 +412,18 @@ header{
 
 .services_1 .img img{
     vertical-align: top;
-    display:table-header-group;
 }
 
 .services_1 .text {
     width: 90%;
     margin-left: 15px;
     padding: 30px;
-    display:table-footer-group;
 }
 
 .services_2 .text{
     width: 100%;
     padding: 30px;
+    margin-left: 150px;
     
 }
 
