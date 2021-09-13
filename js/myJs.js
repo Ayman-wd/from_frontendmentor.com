@@ -1,17 +1,12 @@
 
 
 
-let burger= document.querySelector('#js-burger');
+let burger= document.querySelector('.burger');
+let headerLinks = document.querySelector('.header-links');
 
-
-let headerLinks = document.querySelector ('.header-links');
-
-burger.addEventListener('click', show());
-
-
-
-
-function show(){
+burger.addEventListener('click', function (){
     headerLinks.classList.toggle('show');
-}
+});
+
+
 

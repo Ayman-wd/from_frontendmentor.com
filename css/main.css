@@ -31,23 +31,23 @@ header{
     margin-left: 40px;
 }
 
-.header-links ul{
+.header-links {
     display: flex;
     margin-right: 40px;
 }
 
-.header-links ul li{
+.header-links li{
     margin-left: 40px;
     
 }
 
-.header-links ul li a{
+.header-links li a{
     color: white;
     font-family: 'Barlow', sans-serif;
 
     font-size: 18px;
 }
-.header-links ul .btn-contact{
+.header-links .btn-contact{
     background-color: white;
     color: black;
     padding: 16px 20px;
@@ -56,7 +56,7 @@ header{
 
 }
 
-.header-links ul .btn-contact:hover{
+.header-links .btn-contact:hover{
     background-color: hsla(0, 0%, 100%, 0.3);
     transition: .5s;
     color: white;
@@ -326,19 +326,14 @@ header{
     }
 
 
-
-
-    .header-links {
+   
+ 
+    .header-links  {
         position: absolute;
         top:30%;
-        left: 200%;
-    }
-    
-    .show{
         left: 5%;
-    }
-    .header-links ul {
-        display:block ; 
+        display: block;
+        transform: translateY(-500px); 
         background-color: white; 
         width: 345px;
         height: 335px;
@@ -346,12 +341,16 @@ header{
         font-family: 'Barlow', sans-serif;
         position: absolute;
         top:30%;
-        left: 5%;
         text-align: center; 
+        transition: 0.5s;
+    }
+
+    .show{
+        transform: translateY(0px); 
         
     }
 
-    .header-links ul li{
+    .header-links li{
         text-align: center;
         justify-content: center;
         color :hsl(212, 27%, 19%);
@@ -359,16 +358,16 @@ header{
         
     }
 
-    .header-links ul li a{
+    .header-links li a{
         color :hsl(212, 27%, 19%);
     }
 
-    .header-links ul .btn-contact{
+    .header-links .btn-contact{
         background-color: hsl(51, 100%, 49%);
         color :hsl(212, 27%, 19%);  
     }
 
-    .header-links ul .btn-contact:hover{
+    .header-links .btn-contact:hover{
         background-color: hsl(51, 100%, 49%);
         color :hsl(212, 27%, 19%);  
     }
@@ -394,7 +393,12 @@ header{
     
 /* services section */
 
-.services_1 ,.services_2{
+.services_1 {
+    display: table;
+    text-align: center;
+}
+
+.services_2{
    display: block;
    text-align: center;
 }
@@ -405,12 +409,14 @@ header{
 
 .services_1 .img img{
     vertical-align: top;
+    display:table-header-group;
 }
 
 .services_1 .text {
     width: 90%;
     margin-left: 15px;
     padding: 30px;
+    display:table-footer-group;
 }
 
 .services_2 .text{
